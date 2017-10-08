@@ -1,0 +1,23 @@
+
+.p1{color:red;font-size:30px;text-align: center;}
+.F1{display:inline-block;width:600px;height: 335px;border:5px solid black;margin-left:-0.5em; vertical-align: top;}
+.F2{display:inline-block;width:600px;height: 320px;border:5px solid black;margin-left:-0.5em; vertical-align: top;}
+.F3{display:inline-block;border:1px solid gray;padding-right: 0px;border:5px solid black;margin-left:-0.5em;vertical-align: bottom;height:300px;}
+.title1{color: red;font-size:25px;}
+.title2{color: red;font-size:25px;}
+.title3{color: red;font-size:25px;}
+.title4{color: red;font-size:25px;}
+.title5{color: red;font-size:25px;}
+.title6{color: red;font-size:25px;}
+.div{font-size: 0;text-align: justify;}
+th,td{width:135px;height: 30px;font-size: 15px;text-align: center}
+#button1{width:173px;height:20px;font-size: 15px}
+.button2{width:173px;height:20px;font-size: 15px}
+.form1{font-size:15px;text-indent:65px;}
+.form2{font-size:15px;text-align: center;}
+#currentTime{font-size:35px;color:red;}
+#currentProcess{font-size:35px;color:red;}
+#wait{font-size:30px;color:red;}
+#turn{font-size:30px;color:red;}
+.strong{font-size:14px}
+.strong2{font-size:20px}

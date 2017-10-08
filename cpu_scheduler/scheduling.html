@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="stylesheet.css">
+     <script src="algorithm.js"></script>
+	<title>Cpu Schedule</title>
+</head>
+<body>
+<p>
+<div>
+   <p class = "p1">CPU Scheduling</p>
+   <span class="F1">
+   <p class="title1">Data</p>
+     <from action = "scheduling.html" method="post">
+   <div class = "form1"><span id = "cnop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NumbersOfProcess&nbsp;</span><span id = "calg">&nbsp;&nbsp;&nbsp;Algorithm&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;Quantum</span></div>
+   <div class = "form1">
+   <span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select id = "noj">
+            <option selected>Choose</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+        </select>	
+   </span>
+    <span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <select id = "algo">
+            <option selected>Choose</option>
+        	<option value = "FCFS" >FCFS</option>
+        	<option value = "SJF_P" >SJF_P</option>
+            <option value = "SJF_NONP" >SJF_NONP</option>
+            <option value = "RR" >RR</option>
+            <option value = "PS_P" >PS_P</option>
+            <option value = "PS_NONP" >PS_NONP</option>
+        </select>
+    </span>
+    <span>
+        &nbsp;&nbsp;&nbsp;
+        <select id = "quan">
+            <option selected>Choose</option>
+            <option value = "0" >0</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+        </select>	
+   </span>
+    <br><br>
+    <span id = "ccpur">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPU Requirement&nbsp;</span><span id = "prio">&nbsp;&nbsp;&nbsp;Priority</span></span><span id="at">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arriavl Time</span><br>
+    <span>&nbsp;&nbsp;Process1:      </span>
+    <span>
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       <select id = "cpur1">
+            <option selected>Choose</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+            <option value = "5" >5</option>
+            <option value = "6" >6</option>
+            <option value = "7" >7</option>
+        </select>
+    </span>
+    <span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <select id = "prio1">
+            <option selected>Choose</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+            <option value = "5" >5</option>
+            <option value = "6" >6</option>
+        </select>
+    </span>
+    <span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <select id = "arr1">
+            <option selected>Choose</option>
+            <option value = "0" >0</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+            <option value = "5" >5</option>
+            <option value = "6" >6</option>
+            <option value = "7" >7</option>
+            <option value = "8" >8</option>
+            <option value = "9" >9</option>
+            <option value = "10" >10</option>
+            <option value = "11" >11</option>
+            <option value = "12" >12</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><br>
+        <span>&nbsp;&nbsp;Process2:      </span>
+    <span>
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       <select id = "cpur2">
+            <option selected>Choose</option>
+            <option value = "0" >0</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+            <option value = "5" >5</option>
+            <option value = "6" >6</option>
+            <option value = "7" >7</option>
+        </select>
+    </span>
+    <span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <select id = "prio2">
+            <option selected>Choose</option>
+            <option value = "0" >0</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+            <option value = "5" >5</option>
+            <option value = "6" >6</option>
+        </select>
+    </span>
+    <span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <select id = "arr2">
+            <option selected>Choose</option>
+            <option value = "0" >0</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+            <option value = "5" >5</option>
+            <option value = "6" >6</option>
+            <option value = "7" >7</option>
+            <option value = "8" >8</option>
+            <option value = "9" >9</option>
+            <option value = "10" >10</option>
+            <option value = "11" >11</option>
+            <option value = "12" >12</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><br>
+        <span>&nbsp;&nbsp;Process3:      </span>
+    <span>
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       <select id = "cpur3">
+            <option selected>Choose</option>
+            <option value = "0" >0</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+            <option value = "5" >5</option>
+            <option value = "6" >6</option>
+            <option value = "7" >7</option>
+        </select>
+    </span>
+    <span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <select id = "prio3">
+            <option selected>Choose</option>
+            <option value = "0" >0</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+            <option value = "5" >5</option>
+            <option value = "6" >6</option>
+        </select>
+    </span>
+    <span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <select id = "arr3">
+            <option selected>Choose</option>
+            <option value = "0" >0</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+            <option value = "5" >5</option>
+            <option value = "6" >6</option>
+            <option value = "7" >7</option>
+            <option value = "8" >8</option>
+            <option value = "9" >9</option>
+            <option value = "10" >10</option>
+            <option value = "11" >11</option>
+            <option value = "12" >12</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><br>
+        <span>&nbsp;&nbsp;Process4:      </span>
+    <span>
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       <select id = "cpur4">
+            <option selected>Choose</option>
+            <option value = "0" >0</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+            <option value = "5" >5</option>
+            <option value = "6" >6</option>
+            <option value = "7" >7</option>
+        </select>
+    </span>
+    <span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <select id = "prio4">
+            <option selected>Choose</option>
+            <option value = "0" >0</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+            <option value = "5" >5</option>
+            <option value = "6" >6</option>
+        </select>
+    </span>
+    <span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <select id = "arr4">
+            <option selected>Choose</option>
+            <option value = "0" >0</option>
+        	<option value = "1" >1</option>
+        	<option value = "2" >2</option>
+            <option value = "3" >3</option>
+            <option value = "4" >4</option>
+            <option value = "5" >5</option>
+            <option value = "6" >6</option>
+            <option value = "7" >7</option>
+            <option value = "8" >8</option>
+            <option value = "9" >9</option>
+            <option value = "10" >10</option>
+            <option value = "11" >11</option>
+            <option value = "12" >12</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>
+    </div>
+   <div class = "form2"><span><input type= "button"  value = "start" id="button1"></span><span><input type="reset" class = "button2"></span><span><input type="button" name = "finish" value ="finish" id = "button2" class="button2"></div>
+   </form>
+   </span>
+   <span class="F1">
+   <p class="title2">Job Pool</p>
+   <table border="1" id = "table1">
+   <tr><th>Process #</th><th>Arrive Time</th><th>CPU Requirement</th><th>Priority</th></tr>
+   <tr><th>Process 1</th><td></td><td></td><td></td></tr>
+   <tr><th>Process 2</th><td></td><td></td><td></td></tr>
+   <tr><th>Process 3</th><td></td><td></td><td></td></tr>
+   <tr><th>Process 4</th><td></td><td></td><td></td></tr>
+   </table>
+   </span>
+   <br>
+   <span class="F2">
+   <p class="title3">CPU</p>
+   <table id = "table2">
+   <tr><th class="strong2">Current Process    </th><th class="strong2">Current Time</th></tr>
+   <tr><td id ="currentProcess"></td><td id ="currentTime"></td></tr>
+   </table>
+   </span>
+   <span class="F2">
+   <p class="title5">Total</p>
+   <table id="table3">
+   <tr><th class="strong">Waiting</th><th class="strong">Turnaround</th><th class ="strong">Process#</th></tr>
+   <tr><td id="wait"></td><td id="turn"></td><td id="wait">Total</td>
+   <tr><td id="wait"></td><td id="turn"></td><td id="wait">1</td>
+   <tr><td id="wait"></td><td id="turn"></td><td id="wait">2</td>
+   <tr><td id="wait"></td><td id="turn"></td><td id="wait">3</td>
+   <tr><td id="wait"></td><td id="turn"></td><td id="wait">4</td>
+   </table>
+   </span>
+   <br>
+   <div class="F3">
+   <p class="title6">Gantt</p>
+   <canvas id="myCanvas" width="1212" height="200"></canvas>
+ </div>
+</p>
+</body>
+</html>
